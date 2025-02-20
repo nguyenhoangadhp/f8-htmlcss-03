@@ -380,3 +380,124 @@ a {
 .work-item__more:hover {
     text-decoration: underline;
 }
+
+/* Feature */
+.feature {
+    margin: 170px 0;
+}
+
+.feature__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 130px;
+}
+
+.feature__images {
+    display: flex;
+}
+
+.feature__img-1 {
+    width: 512px;
+    height: 370px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.feature__img-2 {
+    margin-top: 121px;
+    margin-left: -274px;
+    width: 332px;
+    height: 370px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.feature__btn {
+    margin-top: 38px;
+}
+
+/* Members */
+.member {
+    margin-bottom: 170px;
+    text-align: center;
+}
+
+.member__cta {
+    margin-top: 38px;
+    display: flex;
+    justify-content: center;
+}
+
+.member__list {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 34px;
+}
+
+.member-item:hover .member-item__img {
+    transform: scale(1.1);
+}
+
+.member-item__img-bg {
+    padding-top: 28px;
+    border-radius: 6px;
+    background: #eaf6ff;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+}
+
+.member-item__name {
+    margin-top: 12px;
+    color: #10375c;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
+}
+
+.member-item__img {
+    max-width: 100%;
+    height: 290px;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.member-item__working {
+    color: #575f66;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.85;
+}
+
+.member__control {
+    display: inline-flex;
+    column-gap: 16px;
+}
+
+.member__control-btn {
+    margin-top: 38px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid #575f66;
+    outline: none;
+    background: #fff;
+    color: #575f66;
+    cursor: pointer;
+}
+
+.member__control-btn:hover {
+    background: #2e80ce;
+    border-color: #2e80ce;
+    color: #fff;
+    transition: 0.25s;
+}
+
+.next-icon {
+    rotate: 180deg;
+}
