@@ -29,7 +29,6 @@ a {
 
 .btn {
     --height: 60px;
-
     display: inline-block;
     line-height: var(--height);
     height: var(--height);
@@ -41,6 +40,7 @@ a {
     border-radius: 999px;
     background: #2e80ce;
     border: 1px solid #2e80ce;
+    transition: 0.25s;
 }
 
 .btn:hover {
@@ -328,4 +328,55 @@ a {
 
 .services-btn {
     margin-top: 55px;
+}
+
+/* How to work */
+.work {
+    background: #f6fbff;
+    padding: 100px 0;
+}
+.work-list {
+    margin-top: 86px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+}
+
+.work-item {
+    border: 16px solid #eaf6ff;
+    border-radius: 4px;
+    padding: 42px;
+    transition: 0.25s;
+}
+
+.work-item:hover {
+    border-color: #2e80ce;
+    transform: translateY(-16px);
+}
+
+.work-item__heading {
+    margin-top: 18px;
+    color: #10375c;
+    font-size: 2.6rem;
+    font-weight: 600;
+    line-height: 1.38;
+}
+
+.work-item__desc,
+.work-item__more {
+    margin-top: 28px;
+    color: #575f66;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.75;
+}
+
+.work-item__more {
+    color: #2e80ce;
+    display: inline-block;
+    margin-top: 18px;
+}
+
+.work-item__more:hover {
+    text-decoration: underline;
 }
