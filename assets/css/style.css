@@ -12,6 +12,10 @@ body {
     font-size: 1.6rem;
 }
 
+footer {
+    font-family: "Open Sans";
+}
+
 /* Common */
 :root {
     --header-bg: #10375c;
@@ -19,6 +23,14 @@ body {
 
 a {
     text-decoration: none;
+}
+
+button,
+textarea,
+select,
+input {
+    font-size: inherit;
+    font-family: inherit;
 }
 
 .container {
@@ -119,6 +131,7 @@ a {
     font-size: 1rem;
     position: relative;
     display: inline-flex;
+    font-family: "Sora", serif;
 }
 
 .logo__circle::before,
@@ -695,4 +708,130 @@ a {
 
 .appoint__btn {
     margin-top: 38px;
+}
+
+/* Footer */
+.footer {
+    background: #10375c;
+    padding-top: 100px;
+}
+
+.footer__row {
+    display: grid;
+    grid-template-columns: 1fr 0.4fr 0.4fr 1fr;
+    column-gap: 78px;
+}
+
+.footer__desc {
+    margin-top: 20px;
+    color: #a9b3bb;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
+}
+
+.footer__heading {
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75;
+}
+
+.footer__link {
+    color: #a9b3bb;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85;
+    white-space: nowrap;
+}
+
+.footer__link:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.footer__list {
+    margin-bottom: 28px;
+}
+
+.footer__item {
+    margin-top: 10px;
+}
+
+.footer__socials {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 28px;
+}
+
+.footer__socials-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #fff;
+    color: #2e80ce;
+    transition: 0.25s;
+}
+
+.footer__socials-btn:hover {
+    background: #2e80ce;
+    color: #fff;
+}
+
+.footer-form {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.footer-form__input {
+    width: 212px;
+    height: 46px;
+    padding: 10px;
+    outline: none;
+    border-radius: 4px;
+    border: 1px solid #406181;
+    color: #fff;
+    background: transparent;
+}
+
+.footer-form__input::placeholder {
+    color: #9ca8b1;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85;
+}
+
+.footer-form__submit:hover {
+    cursor: pointer;
+}
+
+.footer-form__submit {
+    border-radius: 6px;
+    min-width: 108px;
+    --height: 46px;
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.85;
+}
+
+.footer__copyright {
+    margin-top: 28px;
+}
+
+.footer__copyright-text {
+    color: #aab3ba;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85;
+    border-top: 1px solid #406181;
+    padding-top: 28px;
+    padding-bottom: 42px;
 }
